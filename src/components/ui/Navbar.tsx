@@ -23,6 +23,11 @@ const Navbar = () => {
             {/* About */}
             <NavigationMenuItem>
               <NavigationMenuTrigger>Home</NavigationMenuTrigger>
+              <NavigationMenuContent className="bg-white p-4 rounded-lg shadow-md w-[200px] absolute left-0">
+                <NavigationMenuLink href="/home" className="text-black hover:text-green-500 block">
+                  My Dashboard
+                </NavigationMenuLink>
+              </NavigationMenuContent>
             </NavigationMenuItem>
 
             {/* Businesses */}
@@ -30,22 +35,22 @@ const Navbar = () => {
               <NavigationMenuTrigger className="hover:text-green-500 font-semibold">
                 Something
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="bg-white p-4 rounded-lg shadow-md w-[200px]">
+              <NavigationMenuContent className="bg-white p-4 rounded-lg shadow-md w-[200px] absolute left-0">
                 <ul className="space-y-2">
                   <li className="text-green-500 font-semibold">example</li>
                   <li>
-                    <NavigationMenuLink className="text-black hover:text-green-500">
+                    <NavigationMenuLink className="text-black hover:text-green-500 block">
                       test1
                     </NavigationMenuLink>
                   </li>
                   <li>
-                    <NavigationMenuLink className="text-black hover:text-green-500">
+                    <NavigationMenuLink className="text-black hover:text-green-500 block">
                       test2
                     </NavigationMenuLink>
                   </li>
                   <li>
-                    <NavigationMenuLink className="text-black hover:text-green-500">
-                        test3
+                    <NavigationMenuLink className="text-black hover:text-green-500 block">
+                      test3
                     </NavigationMenuLink>
                   </li>
                 </ul>
@@ -55,14 +60,14 @@ const Navbar = () => {
             {/* Other Menu Items */}
             <NavigationMenuItem>
               <NavigationMenuTrigger>Claims</NavigationMenuTrigger>
-              <NavigationMenuContent className="bg-white p-4 rounded-lg shadow-md w-[200px]">
-              <NavigationMenuLink href="/claims" className="text-black hover:text-green-500">
-                      Make Claim
-                    </NavigationMenuLink>
-                <NavigationMenuLink href="/claims" className="text-black hover:text-green-500">
-                    My Claims
+              <NavigationMenuContent className="bg-white p-4 rounded-lg shadow-md w-[200px] absolute left-0">
+                <NavigationMenuLink href="/claims" className="text-black hover:text-green-500 block">
+                  Make Claim
                 </NavigationMenuLink>
-                </NavigationMenuContent>
+                <NavigationMenuLink href="/claims" className="text-black hover:text-green-500 block mt-2">
+                  My Claims
+                </NavigationMenuLink>
+              </NavigationMenuContent>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
